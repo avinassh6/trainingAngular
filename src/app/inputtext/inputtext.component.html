@@ -1,0 +1,7 @@
+<p>inputtext works!</p>
+
+<input type="text" [(ngModel)]="name" type="text" (keypress)="textOnly($event)">
+
+<button type="button" (click)="nameDisplay()">Save</button>
+
+{{nameValue}}

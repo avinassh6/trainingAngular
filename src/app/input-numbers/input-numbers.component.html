@@ -1,0 +1,8 @@
+<p>input-numbers works!</p>
+
+
+<input type="text" [(ngModel)]="numbers" type="text" (keypress)="numberOnly($event)">
+
+<button type="button" (click)="numberDisplay()" [disabled]="numberVal">Save</button>
+
+{{numberVal}}
