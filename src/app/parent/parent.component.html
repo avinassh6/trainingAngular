@@ -1,0 +1,7 @@
+<p>parent works!</p>
+<span *ngFor="let hero of cols">
+  {{hero.field}} <br>
+</span>
+
+<app-child [parentvalue]="cols" (childMessage)="childValue($event)"></app-child>
+{{childMessage}}

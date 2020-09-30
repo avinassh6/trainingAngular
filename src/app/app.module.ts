@@ -11,6 +11,8 @@ import { FifthComponentAttributeComponent } from './fifth-component-attribute/fi
 import { InputtextComponent } from './inputtext/inputtext.component';
 import { InputNumbersComponent } from './input-numbers/input-numbers.component';
 import { InputdisabledComponent } from './inputdisabled/inputdisabled.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { InputdisabledComponent } from './inputdisabled/inputdisabled.component'
     FifthComponentAttributeComponent,
     InputtextComponent,
     InputNumbersComponent,
-    InputdisabledComponent
+    InputdisabledComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
