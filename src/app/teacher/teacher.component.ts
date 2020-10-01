@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { CommomService } from '../commom.service';
 
 @Component({
@@ -6,8 +6,10 @@ import { CommomService } from '../commom.service';
   templateUrl: './teacher.component.html',
   styleUrls: ['./teacher.component.css']
 })
-export class TeacherComponent implements OnInit {
+export class TeacherComponent implements OnInit, AfterViewInit {
   teacherMessage =" ";
+  @ViewChild('teacherRef' , { static: false }) teacherElementRef :ElementRef;
+
   constructor(private cs:CommomService) { }
 
   ngOnInit(): void {
@@ -15,5 +17,8 @@ export class TeacherComponent implements OnInit {
   }
   teacherMethod(param){
     this.cs.sendMessage(param)
+  }
+  ngAfterViewInit():void{
+    this.teacherElementRef.nativeElement.focus();
   }
 }

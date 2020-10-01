@@ -5,9 +5,8 @@ import { CommomService } from '../commom.service';
   templateUrl: './student.component.html',
   styleUrls: ['./student.component.css']
 })
-export class StudentComponent implements OnInit {
+export class StudentComponent implements OnInit{
 user:string;
-
 constructor(private cs:CommomService) { }
   ngOnInit(): void {
     this.cs.castUser.subscribe(user => this.user = user);

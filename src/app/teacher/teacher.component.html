@@ -1,5 +1,5 @@
 <p>teacher works!</p>
-<input type="text" [(ngModel)]="teacherMessage" name="teacher">
+<input type="text" [(ngModel)]="teacherMessage" name="teacher" #teacherRef >
 
 <button type="button" (click)="teacherMethod(teacherMessage)">save</button>
 {{teacherMessage}}
