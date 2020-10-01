@@ -13,6 +13,9 @@ import { InputNumbersComponent } from './input-numbers/input-numbers.component';
 import { InputdisabledComponent } from './inputdisabled/inputdisabled.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { CommomService } from './commom.service';
+import { TeacherComponent } from './teacher/teacher.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +29,17 @@ import { ChildComponent } from './child/child.component';
     InputNumbersComponent,
     InputdisabledComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    TeacherComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    CommomService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
