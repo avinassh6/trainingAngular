@@ -16,6 +16,7 @@ import { ChildComponent } from './child/child.component';
 import { CommomService } from './commom.service';
 import { TeacherComponent } from './teacher/teacher.component';
 import { StudentComponent } from './student/student.component';
+import { FirstDirectiveDirective } from './first-directive.directive';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { StudentComponent } from './student/student.component';
     ParentComponent,
     ChildComponent,
     TeacherComponent,
-    StudentComponent
+    StudentComponent,
+    FirstDirectiveDirective
   ],
   imports: [
     BrowserModule,
