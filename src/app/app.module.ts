@@ -17,9 +17,11 @@ import { CommomService } from './commom.service';
 import { TeacherComponent } from './teacher/teacher.component';
 import { StudentComponent } from './student/student.component';
 import { FirstDirectiveDirective } from './first-directive.directive';
+import { UploadComponent } from './upload/upload.component';
+import { DragdropDirective } from './dragdrop.directive';
 
 @NgModule({
-  declarations: [
+  declarations: [		
     AppComponent,
     FirstComponentComponent,
     SecondComponentComponent,
@@ -33,8 +35,10 @@ import { FirstDirectiveDirective } from './first-directive.directive';
     ChildComponent,
     TeacherComponent,
     StudentComponent,
-    FirstDirectiveDirective
-  ],
+    FirstDirectiveDirective,
+      UploadComponent,
+      DragdropDirective
+   ],
   imports: [
     BrowserModule,
     FormsModule

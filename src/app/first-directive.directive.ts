@@ -21,8 +21,10 @@ export class FirstDirectiveDirective {
   }
   @HostListener('mouseover') onMouseOver(): void {
     this.renderer.addClass(this.ef.nativeElement, 'abc');
+    this.renderer.setAttribute(this.ef.nativeElement, 'value', 'first');
   }
-  @HostListener('onMouseOver') onMouseLeave(): void{
+  @HostListener('onMouseOut') onMouseOut(): void{
     this.renderer.removeClass(this.ef.nativeElement, 'abc');
+    this.renderer.removeAttribute(this.ef.nativeElement, 'value');
   }
 }
